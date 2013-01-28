@@ -1,0 +1,1 @@
+require("../mathmode.js")("e^{i \\pi} = -1").pipe(process.stdout)
