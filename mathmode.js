@@ -10,7 +10,7 @@ module.exports = function(expr, options) {
     options = {};
   }
   var format = options.format || "png";
-  var size   = options.size || 300;
+  var size   = options.dpi    || 300;
   
   var package_list = options.packages || [ "amsmath" ];
   var packages = [];

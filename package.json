@@ -1,0 +1,36 @@
+{
+  "name": "mathmode",
+  "version": "0.0.0",
+  "description": "Turns LaTeX math mode expressions into images",
+  "main": "mathmode.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "latex": "~0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node examples/simple.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/mathmode.git"
+  },
+  "keywords": [
+    "latex",
+    "tex",
+    "pdflatex",
+    "png",
+    "image",
+    "mathmode",
+    "mathjax",
+    "math",
+    "equation",
+    "typeset"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "88efe261270a99d6313eb5e692b1a7c5050e430b"
+}
