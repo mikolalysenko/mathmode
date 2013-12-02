@@ -2,7 +2,7 @@ var latex   = require("latex");
 var spawn   = require("child_process").spawn;
 
 function sanitize(expr) {
-  return expr.replace(/\$/g, "");
+  return expr.replace(/\$/g, "\\$");
 }
 
 module.exports = function(expr, options) {
