@@ -2,7 +2,11 @@ var latex   = require("latex");
 var spawn   = require("child_process").spawn;
 
 function sanitize(expr) {
-  return expr.replace(/\$/g, "");
+  var sanitized = expr.replace(/([^\\](\\\\)*)(\$)/g, "$1");
+  if(sanitized.charAt(0) === "$") {
+    return sanitized.substr(1)
+  }
+  return sanitized
 }
 
 module.exports = function(expr, options) {
