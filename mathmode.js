@@ -40,9 +40,8 @@ module.exports = function(expr, options) {
     format:   "pdf"
   });
   
-  var convert_path = options.graphicsmagick_path || "gm";
+  var convert_path = options.graphicsmagick_path || "convert";
   var convert = spawn(convert_path, [
-    "convert",
     "-density", "" + size,
     "-quality", "100",
     "pdf:-",
