@@ -55,7 +55,5 @@ module.exports = function(expr, options) {
   });
   tex_stream.pipe(convert.stdin);
 
-  console.log("START", expr)
-
   return result;
 }
