@@ -40,7 +40,7 @@ module.exports = function(expr, options) {
     format:   "pdf"
   });
   
-  var convert_path = options.graphicsmagick_path || "convert";
+  var convert_path = options.imagemagick_path || "convert";
   var convert = spawn(convert_path, [
     "-density", "" + size,
     "-quality", "100",

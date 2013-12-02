@@ -13,11 +13,11 @@ Installation
 
 This code uses the `preview` LaTeX environment and GraphicsMagick, which you will need to install.  To do this on Debian, use the following command:
 
-    sudo apt-get install texlive texlive-latex-extra graphicsmagick
+    sudo apt-get install texlive texlive-latex-extra imagemagick
 
 On OS X, you can do this using MacPorts:
 
-    sudo port install texlive texlive-latex-extra graphicsmagick
+    sudo port install texlive texlive-latex-extra imagemagick
     
 I have no idea how to do any of this on Windows or if this package will even work at all in that environment. If you do know how to use Windows, please open an issue/pull request with a fix.
 
@@ -37,8 +37,8 @@ Turns the LaTeX expression `expr` into an image encoded as a stream.  You can tw
 * `format`:  Resulting image format. Default `png`
 * `packages`: A list of extra LaTeX packages to include.  Default `["amsmath"]`
 * `macros`: A list of LaTeX preprocessor macros.  Default `""`
-* `pdflatex_path`: A path the `pdflatex` executable.  Default: `"pdflatex"`
-* `graphicsmagick_path`: A path to Graphics Magic.  Default `"convert"`
+* `pdflatex_path`: A path the `pdflatex` executable.  Default: `pdflatex`
+* `imagemagick_path`: A path to Graphics Magic.  Default `convert`
 
 The result is a stream object for the resulting image.
 
