@@ -8,6 +8,10 @@ The following one-liner will write a png image of the famous Euler identity to s
 
     require("mathmode")("e^{i \\pi} = -1").pipe(process.stdout)
 
+Here is what the result should look like:
+
+<img src=https://raw.github.com/mikolalysenko/mathmode/master/example/simple.png>
+
 Installation
 ============
 
