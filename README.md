@@ -38,7 +38,7 @@ Turns the LaTeX expression `expr` into an image encoded as a stream.  You can tw
 * `packages`: A list of extra LaTeX packages to include.  Default `["amsmath"]`
 * `macros`: A list of LaTeX preprocessor macros.  Default `""`
 * `pdflatex_path`: A path the `pdflatex` executable.  Default: `pdflatex`
-* `graphicsmagick_path`: A path to Graphics Magic.  Default `gm`
+* `imagemagick_path`: A path to Graphics Magic.  Default `convert`
 
 The result is a stream object for the resulting image.
 
