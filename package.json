@@ -1,10 +1,9 @@
 {
   "name": "mathmode",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Turns LaTeX math mode expressions into images",
   "main": "mathmode.js",
   "directories": {
-    "example": "example"
   },
   "dependencies": {
     "latex": "~0.0.1"
