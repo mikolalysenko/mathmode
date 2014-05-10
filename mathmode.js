@@ -46,6 +46,7 @@ module.exports = function(expr, options) {
   
   var convert_path = options.imagemagick_path || "convert";
   var convert = spawn(convert_path, [
+    "-trim",
     "-density", "" + size,
     "-quality", "100",
     "pdf:-",
