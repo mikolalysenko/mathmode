@@ -15,6 +15,7 @@ module.exports = function(expr, options) {
   }
   var format = options.format || "png";
   var size   = options.dpi    || 300;
+  var ds     = options.displaystyle ? '\\displaystyle' : '';
   
   var package_list = options.packages || [ "amsmath" ];
   var packages = [];
@@ -35,7 +36,7 @@ module.exports = function(expr, options) {
     "\\usepackage{transparent}",
     options.macros || "",
     "\\begin{document}",
-    "\\begin{preview} $",
+    "\\begin{preview} $"+ds,
     sanitize(expr),
     "$ \\end{preview}",
     "\\end{document}"

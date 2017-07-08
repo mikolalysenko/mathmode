@@ -39,6 +39,7 @@ Turns the LaTeX expression `expr` into an image encoded as a stream.  You can tw
 
 * `dpi`: Dots-per-inch determines the resolution of resulting image.  Default: 300
 * `format`:  Resulting image format. Default `png`
+* `displaystyle`: (boolean) Use display style for forulae, defaults to `false` (inline)
 * `packages`: A list of extra LaTeX packages to include.  Default `["amsmath"]`
 * `macros`: A list of LaTeX preprocessor macros.  Default `""`
 * `pdflatex_path`: A path the `pdflatex` executable.  Default: `pdflatex`
